@@ -8,15 +8,20 @@ function translateText () {
   const userInput = textInput.value
   console.log(`${url}?text=${userInput}`)
 
-//   fetch(`${url}?text=${userInput}`)
-//     .then(response => response.json())
-//     .then(data => {
-     outputDiv.innerText = "asfd"
-     outputDiv.style.backgroundColor = "#1C8D73"
+  fetch(`${url}?text=${userInput}`)
+    .then(response => response.json())
+    .then(data => {
+      outputDiv.innerText = data.contents.translated
+      outputDiv.style.backgroundColor = "#120E43"
+      outputDiv.style.color = "#E21717"
+    })
+    .catch(error => {
+      console.log('object')
+      outputDiv.innerText = 'api failed'
+      outputDiv.style.backgroundColor = "#120E43"
+      outputDiv.style.color = "#E21717"
 
-    // })
-    // .catch(error => {
-    //   console.error('Error:', error)
-    // })
+
+    })
 }
 btnTranslate.addEventListener('click', translateText)
