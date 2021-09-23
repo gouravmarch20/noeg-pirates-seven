@@ -1,0 +1,50 @@
+:root {
+  --danger-color: #e83a59;
+  --sucess-color: #383cc1;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  /* background-color: var(--danger-color); */
+}
+
+.hero {
+  padding: 2rem;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image {
+  width: 10%;
+  border-radius: 50%;
+}
+span {
+  color: var(--sucess-color);
+}
+section{
+    margin: 0;
+
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  margin: 4rem;
+}
+.container input {
+}
+.container button {
+  background-color: var(--sucess-color);
+  padding: 0.6rem 1.2rem;
+
+  border-radius: 2rem;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 1.4rem;
+  cursor: pointer;
+}
