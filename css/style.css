@@ -11,6 +11,7 @@ body {
   background-color: var(--danger-color);
 }
 
+
 .hero {
   padding: 2rem;
   padding-top: 3rem;
@@ -21,7 +22,6 @@ body {
 }
 .hero-image {
   width: 10%;
-  border-radius: 50%;
 }
 span {
   color: var(--info-color);
@@ -41,9 +41,9 @@ section {
   margin: 0 auto;
 }
 .container button {
-  background-color: var(--yellow-color);
+  background-color: #E6425E;
   padding: 0.6rem 1.2rem;
-
+border: none;
   border-radius: 2rem;
   width: 30%;
   margin: 0 auto;
@@ -59,4 +59,30 @@ section {
   margin-top: 1rem;
   padding: 1rem;
   border-radius: 3rem;
+}
+
+.output-display p {
+  font-size: 1.3rem;
+  color: #120e43;
+}
+
+/* footer */
+.list-item-inline {
+  display: inline;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  background-color: #E6425E;
+  text-align: center;
+  padding: 0.3rem 0rem;
+}
+.footer-header {
+  margin-bottom: 1rem;
+  font-size: larger;
 }
