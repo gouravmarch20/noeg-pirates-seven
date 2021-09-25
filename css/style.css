@@ -43,7 +43,7 @@ section {
 .container button {
   background-color: #E6425E;
   padding: 0.6rem 1.2rem;
-border: none;
+border: noneg;
   border-radius: 2rem;
   width: 30%;
   margin: 0 auto;
