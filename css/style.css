@@ -1,86 +1,79 @@
-:root {
-  --danger-color: #b9345a;
-  --info-color: #120e43;
-  --yellow-color: #e8bd0d;
-}
 * {
-  padding: 0;
   margin: 0;
+  color: #03203c;
+}
+:root {
+  --blue-color: #207398;
+  --sky-blue-color: #51e1ed;
+  --dark-blue-color: #03203c;
+  --green-color: #4dd637;
 }
 body {
-  background-color: var(--danger-color);
+  background-color: var(--blue-color);
 }
 
+.list-item-inline {
+  display: inline;
+  margin: 0 1rem;
+}
+
+/* hero */
 
 .hero {
-  padding: 2rem;
-  padding-top: 3rem;
+  background-color: var(--sky-blue-color);
+  border-radius: 10% 40% 180%;
+  height: 20vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.hero-image {
-  width: 10%;
+/* .hero  */
+.hero-heading {
+  margin-top: 1rem;
+  text-align: center;
 }
-span {
-  color: var(--info-color);
+.hero-special {
+  color: blue;
 }
-section {
-  margin: 0;
+.hero-img {
+  height: 15vh;
+  display: block;
 }
 .container {
+  width: 60%;
+  height: 40vh;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  width: 80%;
-  justify-content: center;
-  margin: 4rem;
+  justify-content: space-evenly;
 }
-.container textarea {
-  width: 60%;
-  margin: 0 auto;
-}
-.container button {
-  background-color: #E6425E;
-  padding: 0.6rem 1.2rem;
-border: noneg;
-  border-radius: 2rem;
-  width: 30%;
-  margin: 0 auto;
-  margin-top: 1.4rem;
-  cursor: pointer;
-}
+
 .output-display {
-  width: 60%;
-  margin: 0 auto;
+  background-color: var(--dark-blue-color);
+  color: whitesmoke;
+  padding: 1.4rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: large;
 }
-
-#output-div {
-  margin-top: 1rem;
-  padding: 1rem;
-  border-radius: 3rem;
-}
-
 .output-display p {
-  font-size: 1.3rem;
-  color: #120e43;
+  color: wheat;
 }
-
 /* footer */
-.list-item-inline {
-  display: inline;
-}
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   color: white;
-  font-weight: bolder;
   text-align: center;
-  background-color: #E6425E;
+  background-color: var(--sky-blue-color);
+
   text-align: center;
   padding: 0.3rem 0rem;
+  margin-bottom: 0.1rem;
 }
 .footer-header {
   margin-bottom: 1rem;

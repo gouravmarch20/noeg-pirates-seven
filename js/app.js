@@ -6,11 +6,15 @@ const url = 'https://api.funtranslations.com/translate/yoda.json'
 
 function translateText () {
   const userInput = textInput.value
+
   console.log(`${url}?text=${userInput}`)
 
   fetch(`${url}?text=${userInput}`)
     .then(response => response.json())
     .then(data => {
+      if (userInput === '') {
+        alert('input require ')
+      }
       outputDiv.innerText = data.contents.translated
       outputDiv.style.backgroundColor = '#120E43'
       outputDiv.style.color = '#DDD101'
@@ -20,7 +24,7 @@ function translateText () {
     })
     .catch(error => {
       console.log('object')
-      outputDiv.innerText = 'api failed : limit exceed'
+      outputDiv.innerText = 'api  : limit exceed'
       outputDiv.style.backgroundColor = '#120E43'
       outputDiv.style.color = '#DDD101'
       outputDiv.style.fontWeight = 'bold'
