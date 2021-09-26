@@ -16,8 +16,8 @@ function translateText () {
         alert('input require ')
       }
       outputDiv.innerText = data.contents.translated
-      outputDiv.style.backgroundColor = '#120E43'
-      outputDiv.style.color = '#DDD101'
+      // outputDiv.style.backgroundColor = '#120E43'
+      outputDiv.style.color = '#51ff0d'
       outputDiv.style.fontWeight = 'bold'
       outputDiv.style.fontSize = 'larger'
       outputDiv.style.textAlign = 'center'
@@ -25,8 +25,8 @@ function translateText () {
     .catch(error => {
       console.log('object')
       outputDiv.innerText = 'api  : limit exceed'
-      outputDiv.style.backgroundColor = '#120E43'
-      outputDiv.style.color = '#DDD101'
+      // outputDiv.style.backgroundColor = '#120E43'
+      outputDiv.style.color = '#51ff0d'
       outputDiv.style.fontWeight = 'bold'
       outputDiv.style.fontSize = 'larger'
       outputDiv.style.textAlign = 'center'
