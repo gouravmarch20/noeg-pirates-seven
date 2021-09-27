@@ -48,7 +48,12 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
 }
-
+button {
+  border-radius: 2rem;
+  width: 30%;
+  margin: 0rem auto;
+  padding: 0.3rem 0.7rem;
+}
 .output-display {
   background-color: var(--dark-blue-color);
   color: whitesmoke;
